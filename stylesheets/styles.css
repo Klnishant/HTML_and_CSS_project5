@@ -1,0 +1,258 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 10px;
+    background-color: rgb(3, 3, 43);
+}
+
+img{
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    height: 50px;
+}
+
+.hambrger img{
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+
+}
+
+button{
+    color: white;
+    background-color: rgb(56, 56, 220);
+    margin: 0px;
+    padding: 7px;
+    border: 1px black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    color: blue;
+    background-color: white;
+}
+
+.list{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 5px;
+}
+
+.list a{
+    text-decoration: none;
+    color: white;
+}
+
+.upper_section{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 100vw;
+}
+
+.upper_section .left_section img{
+    width: 45px;
+}
+
+.hello{
+    display: flex;
+    gap: 5px;
+}
+
+.greeting{
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.name{
+    color: white;
+    font-size: 60px;
+}
+
+.dev{
+    color: rgb(235, 235, 28);
+    font-size: 35px;
+}
+
+.right_section img{
+    width: 30vw;
+}
+
+.lower_sect{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.lower_sect h1{
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.underline{
+    height: 10px;
+    width: 135px;
+    background-color: blue;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+    margin: 20px;
+    justify-items: center;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    color: white;
+}
+
+.image img{
+    width: 20vw;
+}
+
+footer div img{
+    width: 30px;
+}
+
+.contact{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.footer_underline{
+    background-color: blue;
+    height: 10px;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+@media screen and (max-width:576px) {
+
+    header{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .hambrger img{
+        display: block;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .upper_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hello{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .album{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .contact{
+        font-size: 25px;
+    }
+
+    .footer_underline{
+        width: 140px;
+    }
+    
+}
